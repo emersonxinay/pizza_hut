@@ -16,7 +16,7 @@ if __name__ == '__main__':
     ingredientes_prueba = {
         'masa': 'Masa Tradicional', 'salsa':'Salsa de Tomate', 'ingrediente': ['queso']
     }
-    eleccion = input(""" Escoja el tipo de Masa: 
+    eleccion = int(input(''' Escoja el tipo de Masa: 
     1). Tomate
     2). Champiñon
     3). Aceituna
@@ -27,6 +27,6 @@ if __name__ == '__main__':
     8). Tocino
     9). Queso
     >
-    """).upper()
+    '''))
     ingredientes = agregar_ingrediente(ingredientes_prueba, eleccion)
     print(ingredientes)
